@@ -2,8 +2,7 @@ import React from 'react'
 
 const about = () => {
   return (
-    <div>
-      about page
+    <div className='background-image'>
     </div>
   )
 }
