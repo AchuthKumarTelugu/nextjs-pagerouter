@@ -1,0 +1,8 @@
+.backgroundImage{
+    background-color: aqua;
+    background-image: url('/about-us.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 60px); /* Adjust the height to cover the screen size excluding the height of the navbar */
+   
+}

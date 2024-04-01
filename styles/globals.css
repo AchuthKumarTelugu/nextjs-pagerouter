@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.background-image{
+/* .background-image{
     background-color: aqua;
     background-image: url('/about-us.jpg');
     background-position: center;
     background-size: cover;
     height:100%;
     width:100%;
-}
+} */
