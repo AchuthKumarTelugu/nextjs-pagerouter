@@ -1,5 +1,6 @@
 {
-    "title": "how-to-learn-python",
+    "title": "how to learn python",
     "content": "To learn Python, begin by grasping its fundamentals: variables, data types, and functions. Start coding simple programs to manipulate data and perform basic operations. Then, delve into more complex topics such as object-oriented programming, modules, and control flow statements. Progressively tackle challenges like file handling and web scraping to enhance your skills. Leverage online tutorials, documentation, and coding platforms for practice and guidance. Engage in coding projects and challenges to apply your knowledge effectively. Embrace errors as part of the learning journey; improving in Python requires patience and persistence. Stay updated with the latest features and advancements in the language to refine your expertise continually.",
-    "author": "achuth bhai"
+    "author": "achuth bhai",
+    "slug":"how-to-learn-python"
   }

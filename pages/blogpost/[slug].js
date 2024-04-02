@@ -2,28 +2,32 @@ import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 //find the document corresponding the slug
 //iterate through them and display it
-const slug = () => {
-  const router = useRouter()
-  let { slug } = router.query
-  let [blog,setBlog]=useState({})
+const slug = (props) => {
+  // const router = useRouter()
+  // let { slug } = router.query
+  let [blog, setBlog] = useState(props.data)
+  
   useEffect(() => {
-    if(slug) {
-      console.log('entered useEffect')
-    fetch(`http://localhost:3000/api/getBlogData?slug=${slug}`).then(value=>value.json()).then(response=>{
-      setBlog(response)
-      console.log('finished setting data')
-    })
-  }
-  }, [slug])
+    console.log('blog', blog)
+    console.log('object.keys', Object.keys(blog))
+  }, [blog])
   return (
     <div>
-      
-       { blog && Object.keys(blog)  > 0 ?( <div className='w-1/2 mx-auto text-center mt-5 grid gap-3'><h1 className='font-bold text-3xl'>{blog.title}</h1>
+      {Object.keys(blog).length > 0 ? (<div className='w-1/2 mx-auto  mt-5 grid gap-5'>
+        <h1 className='font-bold text-center text-3xl capitalize'>{blog.title}</h1>
         <hr className='border-black' />
-        <p className='text-xl'>{blog.content}</p> </div>):null}
-      
+        <p className='text-lg'>{blog.content}</p> </div>) : null}
     </div>
   )
 }
-
+export async function getServerSideProps(context) {
+  console.log('context',context.query)
+  // const router = useRouter()
+  let { slug } = context.query
+  const response=await fetch(`http://localhost:3000/api/getBlogData?slug=${slug}`)
+  const data=await response.json()
+  return {
+    props:{data}
+  }
+}
 export default slug
