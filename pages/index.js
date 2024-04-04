@@ -17,7 +17,7 @@ export default function Home() {
       <div className=" flex flex-col justify-center items-center gap-5 ">
         <h1 className="font-bold text-5xl mt-5">Welcome to hunting coder</h1>
         <p className="text-xl text-center">a blog for hunting coders by hunting coders</p>
-        <img src={'/home-coder.jpg'} className="w-1/2" alt="" />
+        <Image src={'/home-coder.jpg'} width={3000} height={1500} className="w-1/2" alt="" />
         {/* <Link href={'/about'}>click me</Link> */}
       </div>
       <div className="w-1/2">
