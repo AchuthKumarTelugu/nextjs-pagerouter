@@ -22,10 +22,10 @@ const Slug = (props) => {
   }
   return (
     <div>
-      {Object.keys(Blog).length > 0 ? (<div className='w-1/2 mx-auto  mt-5 grid gap-5'>
-        <h1 className='font-bold text-center text-3xl capitalize'>{Blog.title}</h1>
+      {Object.keys(Blog).length > 0 ? (<div className='w-1/2 lg:w-2/3 sm:w-[90%] mx-auto  mt-5 grid gap-5'>
+        <h1 className='font-bold text-center text-3xl lg:text-2xl capitalize'>{Blog.title}</h1>
         <hr className='border-black' />
-        <p className='text-lg' dangerouslySetInnerHTML={createMarkup(Blog.content)}>
+        <p className='text-lg lg:text-base' dangerouslySetInnerHTML={createMarkup(Blog.content)}>
           
           </p> </div>) : null}
     </div>

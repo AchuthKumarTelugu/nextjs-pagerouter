@@ -13,7 +13,7 @@ const Blog = (props) => {
   }
   return (
     <div className='grid place-content-center '>
-      <div className="w-1/2 m-auto" >
+      <div className="w-1/2 lg:w-2/3 sm:w-[90%] m-auto" >
         <h1 className="font-bold text-3xl pt-8 pb-4 text-center">Latest Blogs</h1>
         {
           Blogs.length > 0 ? (

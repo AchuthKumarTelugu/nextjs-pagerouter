@@ -15,12 +15,12 @@ export default function Home() {
       </Head>
       {/* <Navbar/> */}
       <div className=" flex flex-col justify-center items-center gap-5 ">
-        <h1 className="font-bold text-5xl mt-5">Welcome to hunting coder</h1>
+        <h1 className="font-bold text-5xl mt-5 lg:text-3xl">Welcome to hunting coder</h1>
         <img src={'/home-coder.jpg'} width={237} height={237} className="rounded-lg" alt="" />
-        <p className="text-4xl font-bold text-center">&lt;Hunting Coder &frasl; &gt;</p>
+        <p className="text-4xl font-bold text-cente lg:text-2xl">&lt;Hunting Coder &frasl; &gt;</p>
         {/* <Link href={'/about'}>click me</Link> */}
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 lg:w-2/3">
         <h1 className="font-bold text-3xl pt-8 pb-4 text-center">Latest Blogs</h1>
         <div className="blog-section grid   gap-4 py-5">
           <div className="blog">
