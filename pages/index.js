@@ -16,28 +16,32 @@ export default function Home() {
       {/* <Navbar/> */}
       <div className=" flex flex-col justify-center items-center gap-5 ">
         <h1 className="font-bold text-5xl mt-5">Welcome to hunting coder</h1>
-        <p className="text-xl text-center">a blog for hunting coders by hunting coders</p>
-        <img src={'/home-coder.jpg'} width={3000} height={1500} className="w-1/2" alt="" />
+        <img src={'/home-coder.jpg'} width={237} height={237} className="rounded-lg" alt="" />
+        <p className="text-4xl font-bold text-center">&lt;Hunting Coder &frasl; &gt;</p>
         {/* <Link href={'/about'}>click me</Link> */}
       </div>
       <div className="w-1/2">
         <h1 className="font-bold text-3xl pt-8 pb-4 text-center">Latest Blogs</h1>
-        <div className="blog-section grid grid-cols-2  gap-4 py-5">
+        <div className="blog-section grid   gap-4 py-5">
           <div className="blog">
             <h2 className="font-bold text-xl">How to learn javascript ?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, laborum tenetur possimus dolore eos quo atque eum. Vero, enim. Impedit.</p>
+            <div className="bg-black text-white w-fit px-4 py-2 rounded my-3 ">Read more</div>
           </div>
           <div className="blog">
             <h2 className="font-bold text-xl">How to learn javascript ?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, laborum tenetur possimus dolore eos quo atque eum. Vero, enim. Impedit.</p>
+            <div className="bg-black text-white w-fit px-4 py-2 rounded my-3 ">Read more</div>
           </div>
           <div className="blog">
             <h2 className="font-bold text-xl">How to learn javascript ?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, laborum tenetur possimus dolore eos quo atque eum. Vero, enim. Impedit.</p>
+            <div className="bg-black text-white w-fit px-4 py-2 rounded my-3 ">Read more</div>
           </div>
           <div className="blog">
             <h2 className="font-bold text-xl">How to learn javascript ?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, laborum tenetur possimus dolore eos quo atque eum. Vero, enim. Impedit.</p>
+            <div className="bg-black text-white w-fit px-4 py-2 rounded my-3 ">Read more</div>
           </div>
         </div>
       </div>
